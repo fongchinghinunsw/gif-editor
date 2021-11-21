@@ -1,9 +1,11 @@
 {
   "name": "gif-editor",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist",
   "scripts": {
+    "build": "tsc -p .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +20,11 @@
   },
   "homepage": "https://github.com/fongchinghinunsw/gif-editor#readme",
   "devDependencies": {
+    "@types/node": "^16.11.9",
     "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "gitwrap": "^1.1.0",
+    "jimp": "^0.16.1"
   }
 }
